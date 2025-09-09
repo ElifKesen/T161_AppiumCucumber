@@ -26,9 +26,10 @@ public class AileButcemStepDef {
       Thread.sleep(3000);
         page.emailBox.sendKeys(ConfigReader.getProperty(Mail));
         Thread.sleep(3000);
-        page.passwordBox.sendKeys(password);
+        page.passwordBox.sendKeys(ConfigReader.getProperty(password));
         Thread.sleep(3000);
-        page.girisYap.click();
+        //page.girisYap.click();
+        ResuableMethods.scrollWithUiScrollableAndClick("Giriş Yap");
 
 
     }
@@ -40,7 +41,7 @@ public class AileButcemStepDef {
     }
     @Then("Sol kisimdaki menuden {string} bolumune gidin")
     public void sol_kisimdaki_menuden_bolumune_gidin(String acilacakBolum) throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         page.MenuButon.click();
         Thread.sleep(2000);
         ResuableMethods.scrollWithUiScrollableAndClick(acilacakBolum);
