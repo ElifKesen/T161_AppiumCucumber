@@ -48,5 +48,13 @@ public class ResuableMethods {
         FileUtils.copyFile(source, finalDestination);
         return target;
     }
+    public static void ekranKaydirmaMethodu(int xbaslangickoordinati, int ybaslangickoordinati, int beklemesuresi, int xbitiskoordinati, int ybitiskoordinati){
+        TouchAction action=new TouchAction<>(Driver.getAndroidDriver());
+        action.press(PointOption.point(xbaslangickoordinati,ybaslangickoordinati)).
+                waitAction(WaitOptions.waitOptions(Duration.ofMillis(beklemesuresi))).
+                moveTo(PointOption.point(xbitiskoordinati,ybitiskoordinati)).
+                release().perform();
+
+    }
 
 }
