@@ -110,6 +110,8 @@ public class KiwiStepDef {
     }
     @Then("Gelen ilk bilet fiyati kaydedilir ve kullanicinin telefonuna SMS olarak gonderilir")
     public void gelen_ilk_bilet_fiyati_kaydedilir_ve_kullanicinin_telefonuna_sms_olarak_gonderilir() {
+       String fiyat =page.fiyatBilgisi.getText();
+       Driver.getAndroidDriver().sendSMS("1111","Bilet fiyat bilgisi: "+fiyat);
 
     }
 }

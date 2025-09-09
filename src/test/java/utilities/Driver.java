@@ -35,8 +35,10 @@ public class Driver {
             caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, ANDROIDVERSION);
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM);
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
-            caps.setCapability("appPackage",ConfigReader.getProperty("kiwiAppPackage"));
-            caps.setCapability("appActivity",ConfigReader.getProperty("kiwiAppActivity"));
+           // caps.setCapability("appPackage",ConfigReader.getProperty("kiwiAppPackage"));
+            caps.setCapability("appPackage",ConfigReader.getProperty("aileButcemPackage"));
+           // caps.setCapability("appActivity",ConfigReader.getProperty("kiwiAppActivity"));
+            caps.setCapability("appActivity",ConfigReader.getProperty("aileButcemActivity"));
             caps.setCapability(MobileCapabilityType.NO_RESET,false);
             /* eger bu capability FALSE olarak kullanilirsa,uygulama test edildikten sonra her seferinde kullanici datalari temizlenir ve
             uygulamanin ilk install haline dondurulur
