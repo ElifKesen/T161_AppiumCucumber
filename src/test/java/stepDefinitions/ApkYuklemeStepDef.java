@@ -17,9 +17,9 @@ public class ApkYuklemeStepDef {
     @Given("Kullanici dosyayolu verilen {string} uygulamayi cihazina yukler")
     public void kullanici_dosyayolu_verilen_uygulamayi_cihazina_yukler(String ApkYolu) throws MalformedURLException {
         DesiredCapabilities capabilities=new DesiredCapabilities();
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel 4 T");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"Elif_Redmi");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"10.0");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"12.0");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
         capabilities.setCapability(MobileCapabilityType.APP,ApkYolu);
 

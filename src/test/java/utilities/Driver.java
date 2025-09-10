@@ -15,8 +15,10 @@ public class Driver {
     private static AndroidDriver<AndroidElement> appiumDriver;
     private static IOSDriver<IOSElement> iosDriver;
 
-    static final String TELEFONADI="Pixel 4 T";
-    static final String ANDROIDVERSION="10.0";
+    //static final String TELEFONADI="Pixel 4 H";
+    static final String TELEFONADI="Elif_Redmi";
+    //static final String ANDROIDVERSION="10.0";
+    static final String ANDROIDVERSION="12.0";
     static final String PLATFORM="Android";
     static final String OTOMASYON_ISMI="UiAutomator2";
 
