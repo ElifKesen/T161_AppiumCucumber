@@ -15,10 +15,10 @@ public class Driver {
     private static AndroidDriver<AndroidElement> appiumDriver;
     private static IOSDriver<IOSElement> iosDriver;
 
-    //static final String TELEFONADI="Pixel 4 H";
-    static final String TELEFONADI="Elif_Redmi";
-    //static final String ANDROIDVERSION="10.0";
-    static final String ANDROIDVERSION="12.0";
+    static final String TELEFONADI="Pixel 4 H";
+    //static final String TELEFONADI="Elif_Redmi";
+    static final String ANDROIDVERSION="10.0";
+   // static final String ANDROIDVERSION="12.0";
     static final String PLATFORM="Android";
     static final String OTOMASYON_ISMI="UiAutomator2";
 
@@ -37,6 +37,10 @@ public class Driver {
             caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, ANDROIDVERSION);
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM);
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
+
+           // caps.setCapability(MobileCapabilityType.UDID,"emulator-5554");
+            //Kimlik numarasi ile cihaz calistirirken, önceki 4 capabilities yoruma alinacak. Sadece bu acilacak
+
            // caps.setCapability("appPackage",ConfigReader.getProperty("kiwiAppPackage"));
             caps.setCapability("appPackage",ConfigReader.getProperty("aileButcemPackage"));
            // caps.setCapability("appActivity",ConfigReader.getProperty("kiwiAppActivity"));

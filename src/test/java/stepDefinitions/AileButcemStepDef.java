@@ -15,7 +15,7 @@ public class AileButcemStepDef {
     @Given("Ilk ekran ayarlarini yapin ve ardindan login sayfasina ulasin")
     public void ilk_ekran_ayarlarini_yapin_ve_ardindan_login_sayfasina_ulasin() {
         for (int i = 0; i < 8; i++) {
-            ResuableMethods.ekranKaydirmaMethodu(900,1400,900,130,1400);
+            ResuableMethods.ekranKaydirmaMethodu(1200,1915,900,430,1915);
         }
         ResuableMethods.scrollWithUiScrollableAndClick("Giriş Yap");
 
